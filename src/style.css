@@ -1,0 +1,143 @@
+/* Attribution */
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Libre Franklin", sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 5rem 2rem;
+  padding-bottom: 2rem;
+}
+
+h3 {
+  font-size: 0.9rem;
+  font-weight: 400;
+  margin-top: 1rem;
+}
+
+.input-group {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  gap: 0.5rem;
+}
+
+.input input {
+  width: 100%;
+}
+
+#email {
+  height: 3rem;
+  border-radius: 40px;
+  border: 1px solid hsl(223, 100%, 88%);
+  padding: 1rem 2rem;
+  outline: none;
+}
+#email.error {
+  border: 1px solid red;
+}
+
+#email.success {
+  border: 1px solid rgb(9, 233, 9);
+}
+
+.error-message {
+  display: none;
+  color: red;
+  font-style: italic;
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 14px;
+}
+
+.input-group button {
+  height: 3rem;
+  border-radius: 40px;
+  border: none;
+  background-color: hsl(223, 87%, 63%);
+  font-weight: 700;
+  color: white;
+}
+
+.weight-300 {
+  font-weight: 300;
+  color: hsl(0, 0%, 59%);
+}
+
+.logo {
+  margin-bottom: 3rem;
+}
+
+.showcase {
+  width: 100%;
+  margin-top: 5rem;
+}
+
+/* Socials */
+.socials {
+  display: flex;
+  gap: 1rem;
+  margin-top: 10rem;
+  margin-bottom: 2rem;
+}
+
+.socials a {
+  width: 40px;
+  height: 40px;
+  border: 1px solid hsl(223, 100%, 88%);
+  color: hsl(223, 87%, 63%);
+  border-radius: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+
+/* Copyright */
+.copyright {
+  font-size: 14px;
+  color: hsl(0, 0%, 59%);
+  margin-bottom: 2rem;
+}
+
+@media (min-width: 760px) {
+  body {
+    padding: 10rem;
+    padding-bottom: 2rem;
+    padding-top: 5rem;
+  }
+
+  .input-group {
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .input-group button {
+    width: 20%;
+  }
+
+  .input-group input {
+    width: 100%;
+  }
+
+  .input {
+    width: 100%;
+  }
+}
